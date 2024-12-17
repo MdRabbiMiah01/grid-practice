@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 3fr 0.3fr;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas: "header header header header header" "nav art art art ads" "footer footer footer footer footer";
+}
+nav{
+    grid-area: nav;
+    background-color: aqua;
+}
+header{
+    grid-area:header;
+    background-color: violet;
+}
+footer{
+    grid-area: footer;
+    background-color: brown;
+}
+#art{
+    grid-area:art;
+    background-color:greenyellow;
+}
+#ads{
+    grid-area:ads;
+    background-color:tomato;
+}
